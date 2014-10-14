@@ -1,0 +1,28 @@
+{
+  "name": "penguins",
+  "version": "0.0.1",
+  "authors": [
+    "3ala22 <ala.hawash@gmail.com>"
+  ],
+  "description": "Penguins Beach Application",
+  "keywords": [
+    "Camera",
+    "Beach",
+    "Penguins"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jQuery": "~2.1.1"
+  },
+  "resolutions": {
+    "angular": "~1.2.26"
+  }
+}
