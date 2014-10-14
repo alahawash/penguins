@@ -14,19 +14,28 @@ angular.module('penguins.capture', ['ngRoute', 'webcam'])
 
         penguinsData = [
             {
+                url: 'img/title.gif',
+                x: 120,
+                y: 10,
+                width: 260,
+                height: 90
+            },
+            {
                 url: 'img/p1.png',
-                x: 10,
-                y: 200,
+                x: 85,
+                y: 215,
                 width: 93,
                 height: 150
             },
             {
                 url: 'img/p2.png',
-                x: 70,
-                y: 170,
+                x: 10,
+                y: 175,
                 width: 93,
                 height: 180
             },
+
+
             {
                 url: 'img/p3.png',
                 x: 330,
@@ -37,7 +46,7 @@ angular.module('penguins.capture', ['ngRoute', 'webcam'])
             {
                 url: 'img/p4.png',
                 x: 380,
-                y: 200,
+                y: 210,
                 width: 93,
                 height: 150
             }
@@ -124,6 +133,7 @@ angular.module('penguins.capture', ['ngRoute', 'webcam'])
                 penguinImages.forEach(function (image) {
                     layer.add(image);
                 })
+
                 stage.add(layer);
 
                 $scope.captureMode = false;

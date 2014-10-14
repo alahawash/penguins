@@ -19,6 +19,7 @@
 <body>
 
     <div class="container" style="width: 580px">
+        <br/>
         <div ng-view></div>
     </div>
     {{ HTML::script('bower_components/angular/angular.js') }}

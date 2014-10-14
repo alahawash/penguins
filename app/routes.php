@@ -31,7 +31,7 @@ Route::post('/save', function () {
 
     Mail::send('emails.penguins', [], function($message) use ($email, $pathToFile)
     {
-        $message->to($email)->subject('Your Photo');
+        $message->to($email)->subject('Welcome to the Beach Mall! Enjoy the new Penguins of Madagascar in 3D coming soon in theatres');
         $message->attach($pathToFile);
     });
 });

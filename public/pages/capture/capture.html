@@ -7,12 +7,14 @@
         <span>Webcam could not be started. Did you give access to it?</span>
     </div>
 </webcam>
+<iframe ng-show="shared" width="560" height="315" src="//www.youtube.com/embed/KHGHEpUeUwo" frameborder="0" allowfullscreen></iframe>
+
 <div class="btn btn-primary" ng-click="makeSnapshot()" ng-show="captureMode">Take photo</div>
 
-<div id="snapshot" class="well" ng-hide="captureMode"></div>
-<div class="btn btn-danger" ng-click="retake()" ng-hide="captureMode">Retake</div>
+<div id="snapshot" class="well" ng-hide="captureMode || shared"></div>
+<div class="btn btn-danger" ng-click="retake()" ng-hide="captureMode">Take a new photo</div>
 <br/>
-<p ng-show="shared" class="alert alert-success">Congratulations, Your photo was shared successfully!</p>
+<p ng-show="shared" class="alert alert-success">Congratulations, Your photo was shared successfully! enjoy the trailer</p>
 <form ng-hide="captureMode || shared">
     <div class="form-group">
         <label>Email</label>
